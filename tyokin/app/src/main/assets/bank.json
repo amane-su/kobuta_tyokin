@@ -1,0 +1,58 @@
+{
+  "account_balances": [
+    {
+      "id": 1234567891,
+      "account_id": 12345678,
+      "date": "2023-02-16",
+      "balance": 100000.0,
+      "balance_in_base": 100000.0,
+      "data_source": "institution",
+      "balance_type": 0
+    },
+    {
+      "id": 1234567892,
+      "account_id": 12345679,
+      "date": "2024-12-16",
+      "balance": 30000.0,
+      "balance_in_base": 30000.0,
+      "data_source": "institution",
+      "balance_type": 0
+    },
+    {
+      "id": 1234567893,
+      "account_id": 12345679,
+      "date": "2025-01-27",
+      "balance": 23000.0,
+      "balance_in_base": 30000.0,
+      "data_source": "institution",
+      "balance_type": 0
+    },
+    {
+      "id": 1234567894,
+      "account_id": 12345679,
+      "date": "2025-02-15",
+      "balance": 50000.0,
+      "balance_in_base": 30000.0,
+      "data_source": "institution",
+      "balance_type": 0
+    },
+    {
+      "id": 1234567895,
+      "account_id": 12345679,
+      "date": "2025-02-16",
+      "balance": 25000.0,
+      "balance_in_base": 30000.0,
+      "data_source": "institution",
+      "balance_type": 0
+    },
+    {
+      "id": 1234567896,
+      "account_id": 12345679,
+      "date": "2025-02-20",
+      "balance": 60000.0,
+      "balance_in_base": 30000.0,
+      "data_source": "institution",
+      "balance_type": 0
+    }
+  ]
+}
