@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotation="0"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/main_background" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="417dp"
+        android:layout_height="156dp"
+        android:scaleType="fitXY"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="333dp"
+        android:layout_height="155dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
+
+    <ImageView
+        android:id="@+id/UIBox"
+        android:layout_width="313dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@android:drawable/editbox_background_normal" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/point"
+        app:layout_constraintBottom_toBottomOf="@+id/detailButton"
+        app:layout_constraintEnd_toStartOf="@+id/pointText"
+        app:layout_constraintTop_toTopOf="@+id/detailButton"
+        app:srcCompat="@drawable/point" />
+
+    <ImageView
+        android:id="@+id/iconBack"
+        android:layout_width="100dp"
+        android:layout_height="270dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@color/white" />
+
+    <TextView
+        android:id="@+id/saveMoneyText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="円"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/usableMoneyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="使えるお金："
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <TextView
+        android:id="@+id/usableMoneyText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="円"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/usableMoneyText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982" />
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="こぶた"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="5dp"
+        android:text="達成度"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/UIBox"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ProgressBar
+        android:id="@+id/saveBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/saveMoneyText2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/UIBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/settingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iconBack"
+        app:layout_constraintTop_toBottomOf="@+id/mission"
+        app:srcCompat="@drawable/setting" />
+
+    <ImageButton
+        android:id="@+id/missionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iconBack"
+        app:layout_constraintTop_toTopOf="@+id/iconBack"
+        app:srcCompat="@drawable/mission1" />
+
+    <TextView
+        android:id="@+id/mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ミッション"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/missionButton"
+        app:layout_constraintStart_toStartOf="@+id/missionButton"
+        app:layout_constraintTop_toBottomOf="@+id/missionButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="設定"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/settingButton"
+        app:layout_constraintStart_toStartOf="@+id/settingButton"
+        app:layout_constraintTop_toBottomOf="@+id/settingButton" />
+
+    <ImageButton
+        android:id="@+id/itemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iconBack"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/itemicon" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="アイテム"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/itemButton"
+        app:layout_constraintStart_toStartOf="@+id/itemButton"
+        app:layout_constraintTop_toBottomOf="@+id/itemButton" />
+
+    <TextView
+        android:id="@+id/pointText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="ポイント"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <ImageButton
+        android:id="@+id/gardenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iconBack"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/garden" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="庭"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gardenButton"
+        app:layout_constraintStart_toStartOf="@+id/gardenButton"
+        app:layout_constraintTop_toBottomOf="@+id/gardenButton" />
+
+    <TextView
+        android:id="@+id/goalText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="円"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/saveMoneyText2"
+        app:layout_constraintTop_toTopOf="@+id/saveMoneyText2" />
+
+    <Button
+        android:id="@+id/detailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="@string/detail_button"
+        app:iconTint="@color/design_default_color_secondary"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/saveBar"
+        app:layout_constraintVertical_bias="0.48000002"
+        app:rippleColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/coinButton10"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="48dp"
+        android:background="@null"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:srcCompat="@drawable/coin10" />
+
+    <ImageButton
+        android:id="@+id/coinButton100"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="48dp"
+        android:background="@null"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coinButton10"
+        app:srcCompat="@drawable/coin100" />
+
+    <ImageButton
+        android:id="@+id/coinButton500"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="48dp"
+        android:background="@null"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/coinButton1000"
+        app:srcCompat="@drawable/coin500" />
+
+    <ImageButton
+        android:id="@+id/coinButton1000"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="48dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/money1000" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/kobuta"
+        android:name="com.example.tyokin.OpenGLFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/chokinbako" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="331dp"
+        android:layout_height="114dp"
+        app:layout_constraintEnd_toStartOf="@+id/iconBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/hukidashi2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="あ"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="gone">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

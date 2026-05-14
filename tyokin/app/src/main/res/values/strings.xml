@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tyokin</string>
+    <string name="detail_button">詳細を見る</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_text">アイテム一覧</string>
+    <string name="back_button">もどる</string>
+    <string name="image_desc">Displayed image</string>
+</resources>
