@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotation="0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/goalText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="円"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/goal"
+        app:layout_constraintTop_toTopOf="@+id/goalText" />
+
+    <TextView
+        android:id="@+id/goalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="目標貯金額"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/saveMoneyText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="現在の貯金額："
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalText" />
+
+    <EditText
+        android:id="@+id/allmoney"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/saveMoneyText1"
+        app:layout_constraintStart_toEndOf="@+id/saveMoneyText1" />
+
+    <EditText
+        android:id="@+id/goal"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/goalText"
+        app:layout_constraintTop_toTopOf="@+id/goalText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="達成率："
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveMoneyText1" />
+
+    <EditText
+        android:id="@+id/achievement"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/achievement" />
+
+    <EditText
+        android:id="@+id/detailButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="✚詳細を見る"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/settingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mission"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <ImageButton
+        android:id="@+id/missionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <TextView
+        android:id="@+id/mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ミッション"
+        app:layout_constraintEnd_toEndOf="@+id/missionButton"
+        app:layout_constraintStart_toStartOf="@+id/missionButton"
+        app:layout_constraintTop_toBottomOf="@+id/missionButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="設定"
+        app:layout_constraintEnd_toEndOf="@+id/settingButton"
+        app:layout_constraintStart_toStartOf="@+id/settingButton"
+        app:layout_constraintTop_toBottomOf="@+id/settingButton" />
+
+    <ImageButton
+        android:id="@+id/itemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="アイテム"
+        app:layout_constraintEnd_toEndOf="@+id/itemButton"
+        app:layout_constraintStart_toStartOf="@+id/itemButton"
+        app:layout_constraintTop_toBottomOf="@+id/itemButton" />
+
+    <ImageButton
+        android:id="@+id/gardenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="庭"
+        app:layout_constraintEnd_toEndOf="@+id/gardenButton"
+        app:layout_constraintStart_toStartOf="@+id/gardenButton"
+        app:layout_constraintTop_toBottomOf="@+id/gardenButton" />
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="円"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/goalValue"
+        app:layout_constraintStart_toEndOf="@+id/goalValue"
+        app:layout_constraintTop_toTopOf="@+id/goalValue" />
+
+    <TextView
+        android:id="@+id/goalValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultNum"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/goalText"
+        app:layout_constraintStart_toEndOf="@+id/goalText"
+        app:layout_constraintTop_toTopOf="@+id/goalText" />
+
+    <Button
+        android:id="@+id/openGL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="openGL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
